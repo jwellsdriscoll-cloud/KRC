@@ -19,7 +19,7 @@ export function ProjectsPage() {
   // Support direct scroll-to-grid when navigated from another page
   useEffect(() => {
     if ((location.state as { scrollToGrid?: boolean } | null)?.scrollToGrid) {
-      scrollToGrid();
+      setTimeout(() => scrollToGrid(), 50);
     }
   }, [location.state]);
 

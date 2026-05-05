@@ -24,7 +24,7 @@ export function HomePage() {
             <p className="krc-heading mb-1">Welcome to KR Customs</p>
             <p className="krc-body">We specialize in custom automotive builds, paint, and classic vehicle restorations in the Pacific Northwest.</p>
           </div>
-          <button className="krc-btn px-4 md:px-6 py-2 md:py-4 shrink-0" onClick={scrollToGrid}>
+          <button className="krc-btn px-4 md:px-6 py-2 md:py-4 shrink-0" onClick={() => navigate('/projects', { state: { scrollToGrid: true } })}>
             See our Projects
           </button>
         </div>
