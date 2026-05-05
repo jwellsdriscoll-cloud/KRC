@@ -4,7 +4,7 @@ import { Menu, X } from 'lucide-react';
 import imgLogo from 'figma:asset/e9e16d7a453246bfbb26c7dbb919bc1d546e46ca.png';
 
 const navItems = [
-  { label: 'Projects', path: '/projects' },
+  { label: 'Projects', path: '/projects', state: { scrollToGrid: true } },
   { label: 'Services', path: '/services' },
   { label: 'Awards',   path: '/awards'   },
   { label: 'About Us', path: '/about'    },
@@ -17,8 +17,8 @@ export function NavHeader() {
 
   const isActive = (path: string) => location.pathname === path;
 
-  const go = (path: string) => {
-    navigate(path);
+  const go = (path: string, state?: object) => {
+    navigate(path, { state });
     setMobileOpen(false);
   };
 
@@ -41,7 +41,7 @@ export function NavHeader() {
               className={`krc-font shrink-0 cursor-pointer leading-8 text-[16px] lg:text-[20px] uppercase whitespace-nowrap transition-colors duration-200 ${
                 isActive(item.path) ? 'text-[#eb3223]' : 'text-white hover:text-[#f1ea5a]'
               }`}
-              onClick={() => go(item.path)}
+              onClick={() => go(item.path, item.state)}
             >
               {item.label}
             </button>
@@ -49,11 +49,10 @@ export function NavHeader() {
 
           {/* Responsive label: short on md, full on lg */}
           <button
-            className="krc-btn-outline shrink-0 ml-4 px-4 lg:px-6 py-2 text-[14px] lg:text-[20px]"
+            className="krc-btn-outline shrink-0 ml-4 px-4 md:px-6 py-2"
             onClick={() => go('/about')}
           >
-            <span className="lg:hidden">Appointments</span>
-            <span className="hidden lg:inline">Make Your Appointment</span>
+            Make Your Appointment
           </button>
         </div>
 
@@ -76,7 +75,7 @@ export function NavHeader() {
               className={`krc-font cursor-pointer text-[18px] uppercase whitespace-nowrap transition-colors duration-200 ${
                 isActive(item.path) ? 'text-[#eb3223]' : 'text-white'
               }`}
-              onClick={() => go(item.path)}
+              onClick={() => go(item.path, item.state)}
             >
               {item.label}
             </button>
