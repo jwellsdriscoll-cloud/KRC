@@ -13,7 +13,12 @@ export function ProjectsPage() {
   const location  = useLocation();
 
   const scrollToGrid = () => {
-    document.getElementById('projects-grid')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const el = document.getElementById('projects-grid');
+    const nav = document.querySelector('nav');
+    if (!el) return;
+    const navHeight = nav ? nav.offsetHeight : 0;
+    const top = el.getBoundingClientRect().top + window.scrollY - navHeight;
+    window.scrollTo({ top, behavior: 'smooth' });
   };
 
   // Support direct scroll-to-grid when navigated from another page
