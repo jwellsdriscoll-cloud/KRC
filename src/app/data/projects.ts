@@ -28,7 +28,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 1,
-    title: "1970-72 Buick Gran Sport",
+    title: "1957 Chevy Bel Air — Full Custom",
     hero: hero1,
     descriptionP1:
       "This '57 Bel Air came to the shop as a bare-bones roller — stripped of its drivetrain and needing a full ground-up restoration. The owner had a clear vision: a sleek, lowered stance with a deep candy apple red paint job that would pay homage to the original while turning heads at every show.",
@@ -38,7 +38,7 @@ export const projects: Project[] = [
   },
   {
     id: 2,
-    title: "1932 Ford Roadster",
+    title: "1936 Custom Sedan — Al Slonaker Award Winner",
     hero: hero2,
     descriptionP1:
       "When Andy brought his '36 custom sedan to my shop he had already spent 16 years working on it in his spare time. His sedan still had the features of a '36, but upon closer inspection I was immediately impressed.",
@@ -48,7 +48,7 @@ export const projects: Project[] = [
   },
   {
     id: 3,
-    title: "1948 Ford F1",
+    title: "1948 Ford F1 — Pro Street Build",
     hero: hero3,
     descriptionP1:
       "The owner of this '48 F1 wanted a truck that could cruise the boulevard on Saturday and compete on the strip on Sunday. Starting from a rust-free California shell, we fabricated a custom front crossmember, tubbed the rear quarters, and built a one-off exhaust that exits through the bed floor.",
@@ -58,7 +58,7 @@ export const projects: Project[] = [
   },
   {
     id: 4,
-    title: "1970 Buick Gran Sport",
+    title: "1955 Ford Thunderbird — Concours Restoration",
     hero: hero4,
     descriptionP1:
       "This matching-numbers '55 T-Bird arrived at the shop after decades in storage. The goal was a full concours-correct restoration — every panel, trim piece, and finish brought back to exactly as it left the Dearborn factory in 1955.",
@@ -68,7 +68,7 @@ export const projects: Project[] = [
   },
   {
     id: 5,
-    title: "1936 Ford Sedan",
+    title: "1969 Camaro Z/28 — Track Prepped",
     hero: hero5,
     descriptionP1:
       "Few first-gen Camaros make it to a shop in original, uncut condition these days. This Z/28 was one of them — completely straight and rust-free, needing only a full media blast, fresh metal where the rockers had started to thin, and a proper performance-oriented build.",
@@ -78,7 +78,7 @@ export const projects: Project[] = [
   },
   {
     id: 6,
-    title: "1932 Ford Roadster",
+    title: "1932 Ford Roadster — Traditional Hot Rod",
     hero: hero6,
     descriptionP1:
       "Traditional hot rods demand traditional craftsmanship. This '32 Roadster was brought in for a full chop-and-channel — three inches off the top and two inches of channel to slam it down over a stout small-block. Every cut was hand-fitted and TIG-welded before finishing.",
@@ -88,7 +88,7 @@ export const projects: Project[] = [
   },
   {
     id: 7,
-    title: "1970 Plymouth Barracuda",
+    title: "1970 Plymouth 'Cuda — Full Rotisserie",
     hero: hero7,
     descriptionP1:
       "This numbers-matching 440 'Cuda came to the shop with a serious rust problem hiding beneath layers of cheap repaint. Once we got it on the rotisserie, we cut out over thirty square feet of compromised steel and fabricated all-new panels from scratch.",

@@ -1,6 +1,5 @@
 import { createBrowserRouter, Outlet, useLocation } from 'react-router';
 import { useEffect } from 'react';
-import { useVersionCheck } from './hooks/useVersionCheck';
 import { HomePage } from './pages/HomePage';
 import { ProjectsPage } from './pages/ProjectsPage';
 import { ProjectDetailPage } from './pages/ProjectDetailPage';
@@ -20,7 +19,6 @@ function ScrollToTop() {
 }
 
 function Root() {
-  useVersionCheck();
   return (
     <div className="min-h-screen w-full overflow-x-hidden bg-black">
       <ScrollToTop />

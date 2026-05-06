@@ -1,4 +1,0 @@
-/// <reference types="vite/client" />
-
-// Injected at build time by vite.config.ts → define.__BUILD_TIME__
-declare const __BUILD_TIME__: string;
