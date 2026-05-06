@@ -5,7 +5,7 @@ import { PageFooter }  from '../components/PageFooter';
 import { projects }    from '../data/projects';
 
 export function ProjectDetailPage() {
-  const { id }    = useParams<{ id: string }>();
+  const { id }    = useParams<{ id: string }>(); 
   const navigate  = useNavigate();
   const project   = projects.find((p) => p.id === Number(id));
 
