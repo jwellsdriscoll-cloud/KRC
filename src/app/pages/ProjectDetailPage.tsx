@@ -24,7 +24,12 @@ export function ProjectDetailPage() {
   }
 
   const scrollToGallery = () => {
-    document.getElementById('photo-gallery')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const el = document.getElementById('photo-gallery');
+    const nav = document.querySelector('nav');
+    if (!el) return;
+    const navHeight = nav ? nav.offsetHeight : 0;
+    const top = el.getBoundingClientRect().top + window.scrollY - navHeight;
+    window.scrollTo({ top, behavior: 'smooth' });
   };
 
   return (
